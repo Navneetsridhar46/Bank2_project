@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><i class="fa-solid fa-sack-dollar fa-8x"></i><a href="#"></a></div>
+      <ul class="menu">
+        <li><a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">View Profile  | </a></li>
+        <li><a data-bs-toggle="modal" data-bs-target="#exampleModal">Balance Enquiry  | </a></li>
+        <li><a data-bs-toggle="modal" data-bs-target="#exampleModal1">Money Transfer  | </a></li>
+        <li><a data-bs-toggle="modal" data-bs-target="#exampleModal2">Account Statement  | </a></li>
+        <li><a href="#">Contact   |</a></li>
+      </ul>
+      <div class="buttons">
+        <input type="button" value="Login">
+        <input type="button" value="Register">
+      </div>
+    </nav>
+    <div class="text-content">
+      <h2>Learn To Enjoy,<br>Every Moment Of Your Life</h2>
+      <h6>With CITI BANK.</h6>
+        <p>Save more >> Spend more</p>
+    </div>
+    <div class="play-button">
+      <span class="play">Play Video</span>
+      <i class="fas fa-play" onclick="click()"></i>
+    </div>
+  </header>
+  <!-- modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-secondary">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Balance Enquiry</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark text-white">
+          <h3>Hi,Name</h3> <br>
+          <img src="" alt="">
+          Your Balance is : <strong>1234</strong>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-secondary">
+          <h1 class="modal-title fs-2" id="exampleModalLabel">Money <i class="fa-solid fa-money-bill-transfer"></i> Transfer </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <input type="text" placeholder="Recipient Account Number"><br><br>
+          <input type="text" placeholder="Enter amount"><br><br>
+          <input type="password" placeholder="Password"><br><br>
+          <button class="btn btn-success text-center" type="button">Transfer</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger me-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><h3>Transactions History <i class="fa-regular fa-file"></i></h3></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Your account was debited by 2000rs <br>
+            Your account was credited with 23000rs
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger me-3" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Print</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- offcanvas view profile -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h3 class="text-center offcanvas-title" id="offcanvasExampleLabel">View Profile</h3>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="text-center">
+        <i class="fa-regular fa-user fa-7x"></i><br><br>
+        <div class="row">
+            <div class="col"><h3>User name :</h3><br>
+                <h3>Account number : </h3><br>
+                <h3>Linked accounts :</h3></div>
+            <div class="col">
+                <h3>Navneet Sridhar</h3><br>
+                <h3>CIT289491</h3><br>
+                <h3>2</h3>
+            </div>
+        </div>
+        
+      </div>
+      <div class="dropdown mt-3 text-center">
+        <button class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown">
+         Services
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Settings</a></li>
+          <li><a class="dropdown-item" href="#">Help</a></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
