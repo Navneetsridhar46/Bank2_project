@@ -10,12 +10,12 @@
     <form action="#">
       <h2>Login | Citi Bank</h2>
         <div class="input-field">
-        <input (change)="acnoChange($event)" type="text" required>
+        <input [(ngModel)] ="acno" name="acc" id="u1" type="text" required>
         <label>Enter your account number</label>
         <!-- [label]="data2" -->
       </div>
       <div class="input-field">
-        <input (change)="pswChange($event)" type="password" required>
+        <input [(ngModel)] ="psw" name="password" id="p1" type="password" required>
         <label>Enter your password</label>
       </div>
       <div class="forget">
@@ -27,7 +27,7 @@
       </div>
       <button (click)="login()" type="submit">Log In</button>
       <div class="register">
-        <p>Don't have an account? <a href="#">Register</a></p>
+        <p>Don't have an account? <a routerLink="signup">Register</a></p>
       </div>
       <h5 style="color: white;margin-top: 10px;">{{data}}</h5>
     </form>
